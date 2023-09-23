@@ -6,4 +6,4 @@ select
     -- amount is stored in cents, convert it to dollars
     amount / 100 as amount
 
-from raw.stripe.payments
+from {{ source('stripe', 'payments') }}
