@@ -14,6 +14,7 @@ models:
     description: one order per customer
     columns:
       - name: order_id
+        description: The primary key for stg_orders
         tests:
           - unique
           - not_null
