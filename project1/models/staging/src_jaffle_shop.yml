@@ -27,3 +27,9 @@ sources:
             tests:
               - unique              
               - not_null
+          - name: user_id
+            description: customer id foreign key of the customer id in the customers table 
+          - name: order_date
+            description: the date on which the order is placed
+          - name: status
+            description: status of the order
