@@ -6,3 +6,12 @@ sources:
     schema: stripe
     tables:
       - name: payments
+        columns:
+          - name: id
+            description: payment id
+          - name: order_id
+            description: order id, i.e. foreign key of the id in the orders table 
+          - name: payment_method
+            description: "{{ doc('payment_status') }}"
+          - name: amount
+            description: the amount charged for the order 
