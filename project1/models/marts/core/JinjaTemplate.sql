@@ -16,8 +16,6 @@
     My favoriteee animal is the  {{ animal }}
 {% endfor %}
 
-#}
-
 {% set temperature = 70 %}
 
 -- If statement
@@ -26,3 +24,18 @@
 {% else %}
     Time for a cold brew!
 {% endif %}    
+
+#}
+
+{% set foods = ['carrot', 'hotdog', 'cucumber', 'chicken', 'bell pepper'] %}
+
+{% for food in foods %}
+    {% if food == 'hotdog' %}
+        {% set food_type = 'snack' %}
+    {% elif food == 'chicken' %}
+        {% set food_type = 'meat' %}
+    {% else %}
+        {% set food_type = 'vegetable' %}
+    {% endif %}
+    The humble {{ food }} is my favorite {{ food_type }}
+{% endfor %}
