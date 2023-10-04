@@ -4,6 +4,6 @@ select
     payment_method,
     
     -- amount is stored in cents, convert it to dollars
-    amount / 100 as amount
+    round (amount / 100 , 2 ) as amount
 
 from {{ source('stripe', 'payments') }}
