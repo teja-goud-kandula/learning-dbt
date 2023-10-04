@@ -17,3 +17,5 @@ When doing the dbt run command exclude the JinjaTemplate model. Hence use this q
 ```
 dbt run --exclude JinjaTemplate.sql
 ```
+
+If there are access issues when running the snowflake spend package use the ACCOUNTADMIN role to continue with the learning or grant the required priviliges. 
