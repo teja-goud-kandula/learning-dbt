@@ -1,4 +1,4 @@
-
+{#
 -- set a variable 
 {% set my_cool_string = 'wow! cool!' %}
 
@@ -15,3 +15,14 @@
 {% for animal in my_animals %}
     My favoriteee animal is the  {{ animal }}
 {% endfor %}
+
+#}
+
+{% set temperature = 70 %}
+
+-- If statement
+{% if temperature < 65 %}
+    Time for a cappucino
+{% else %}
+    Time for a cold brew!
+{% endif %}    
