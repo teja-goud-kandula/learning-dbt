@@ -50,3 +50,7 @@
 %}
 
 {{ websters_dict['word'] }} {{ websters_dict['speech_part'] }} : defined as "{{ websters_dict['definition'] }}"
+
+{{ target.name }}
+{{ target.schema }}
+{{ target.role }}

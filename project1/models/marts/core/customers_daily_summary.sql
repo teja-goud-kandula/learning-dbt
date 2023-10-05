@@ -1,3 +1,8 @@
+{{
+    config(
+        materialized='table'
+      )
+}}
 select 
     {{ dbt_utils.generate_surrogate_key( [ 'CUSTOMER_ID', 'ORDER_DATE' ] ) }} as id,
     CUSTOMER_ID,
