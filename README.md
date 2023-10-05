@@ -26,7 +26,7 @@ dbt run-operation macro_name
 dbt run-operation grant_select -- here grant_select is the macro name 
 ```
 
-If any packages are removed from the packages.yml then the code related to those packages will still stay in the dbt_packages folder. To get rid of these delete packages run the command :
+If any packages are removed from the packages.yml then the code related to those packages will still stay in the dbt_packages folder. To get rid of these deleted packages run the command :
 ```
 dbt clean
 ```
