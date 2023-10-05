@@ -31,4 +31,4 @@ If any packages are removed from the packages.yml then the code related to those
 dbt clean
 ```
 
-This will clean up the folder ```target``` and ```dbt_packages```.
+This will clean up the folders ```target``` and ```dbt_packages```.
